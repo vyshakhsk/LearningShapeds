@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/bck"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center"
+        android:textSize="60sp"
+        android:text="LEARNING"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:layout_marginTop="100dp"
+ />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="60sp"
+        android:text="SHAPES"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn"
+
+        android:text="PLAY"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:onClick="onButtonClickf"
+        android:shadowRadius="5"
+        />
+</android.support.v7.widget.LinearLayoutCompat>

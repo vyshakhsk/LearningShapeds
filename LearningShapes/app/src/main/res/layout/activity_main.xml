@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/progress_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:indeterminate="false" />
+
+    <TextView
+        android:id="@+id/countLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progress_bar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:textColor="@color/colorText"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="Completed: 0/5" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Guess the Shape?"
+        android:textColor="@color/colorText"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imgg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:gravity="center"
+        android:padding="20dp" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/imgg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/answer1"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorTrueButton"
+            android:onClick="checkAnswer"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="answer1" />
+
+        <Button
+            android:id="@+id/answer2"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorTrueButton"
+            android:onClick="checkAnswer"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="answer2" />
+
+        <Button
+            android:id="@+id/answer3"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorTrueButton"
+            android:onClick="checkAnswer"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="answer3" />
+
+        <Button
+            android:id="@+id/answer4"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorTrueButton"
+            android:onClick="checkAnswer"
+            android:textColor="@color/colorText"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="answer4" />
+
+    </LinearLayout>
+
+</RelativeLayout>
